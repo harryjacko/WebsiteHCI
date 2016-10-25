@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type"=text/css" href="stylesheet/stylesheet.css">
+		<title>XYZ - Surveillance</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logowhite.png" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="photo" id ="vbg">
+
+		</div>
+
+		<div class="navigation">
+			<a href="index.html" title="Home"><img src="img\logowhite2.png"></a>
+			<div class="navigation-content">
+				<a href="#"title="Temperature">Temperature</a>
+				<a href="security.html" title="Security">Security</a>
+				<a href="video.html" class="active" title="Surveillance">Surveillance</a>
+				<a href="#" title="Lighting">Lighting</a>
+				<a href="#" title="Profiles">Profiles</a>
+				<a href="#" title="Settings">Settings</a>
+			</div>
+		</div>
+
+		<div class="main2">
+			<div class="main2-header">
+				<br><h1>Surveillance</h1>
+			</div>
+			<div class="main2-left">
+				<ul id = "roomlist">
+					<hr>
+					<li><a href="#" class="active" onclick="show('room1')">Living Room</a></li><hr>
+					<li><a href="#" onclick="show('room2')">Driveway</a></li><hr>
+					<li><a href="#" onclick="show('room3')">Front Door</a></li><hr>
+					<li><a href="#" onclick="show('room4')">Back Door</a></li><hr>
+					<li><a href="#" onclick="show('room5')">Stairwell</a></li><hr>
+					<li><a href="#" onclick="show('room6')">Garden</a></li><hr><br>
+					<li><a href="#" onclick="show()">+ Add New</a></li>
+				</ul>
+			</div>
+
+
+			<div id = "room1" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Living Room</h2>
+					<img src="img/youtubeliving.png">
+					<button class="button">Go</button>
+					<select>
+		        <option>Friday</option>
+		        <option>Thursay</option>
+		        <option>Wedensday</option> <!-- ADD the value thing to this -->
+		      </select>
+          <input id="timeIn" type="time" name="usr_time">
+					<h3>Skip to a time period:</h3>
+
+					<label class="switch">
+  					<input type="checkbox" checked>
+  					<div class="slider"></div>
+					</label>
+					<h4>Camera (enable/disable):</h4>
+
+				</div>
+			</div>
+			<div id = "room2" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Driveway</h2>
+					<img src="img/youtubegate.png">
+					<button class="button">Go</button>
+					<select>
+		        <option>Friday</option>
+		        <option>Thursay</option>
+		        <option>Wedensday</option> <!-- ADD the value thing to this -->
+		      </select>
+          <input id="timeIn" type="time" name="usr_time">
+					<h3>Skip to a time period:</h3>
+
+					<label class="switch">
+  					<input type="checkbox" checked>
+  					<div class="slider"></div>
+					</label>
+					<h4>Camera (enable/disable):</h4>
+				</div>
+			</div>
+
+			<div id = "room3" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Front Door</h2>
+					<img src="img/youtube.png">
+					<button class="button">Go</button>
+					<select>
+		        <option>Friday</option>
+		        <option>Thursay</option>
+		        <option>Wedensday</option> <!-- ADD the value thing to this -->
+		      </select>
+          <input id="timeIn" type="time" name="usr_time">
+					<h3>Skip to a time period:</h3>
+
+					<label class="switch">
+  					<input type="checkbox">
+  					<div class="slider"></div>
+					</label>
+					<h4>Camera (enable/disable):</h4>
+				</div>
+			</div>
+
+			<div id = "room4" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Back Door</h2>
+					<img src="img/youtube.png">
+					<button class="button">Go</button>
+					<select>
+		        <option>Friday</option>
+		        <option>Thursay</option>
+		        <option>Wedensday</option> <!-- ADD the value thing to this -->
+		      </select>
+          <input id="timeIn" type="time" name="usr_time">
+					<h3>Skip to a time period:</h3>
+
+					<label class="switch">
+  					<input type="checkbox">
+  					<div class="slider"></div>
+					</label>
+					<h4>Camera (enable/disable):</h4>
+				</div>
+			</div>
+
+			<div id = "room5" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Stairwell</h2>
+					<img src="img/youtube.png">
+					<button class="button">Go</button>
+					<select>
+		        <option>Friday</option>
+		        <option>Thursay</option>
+		        <option>Wedensday</option> <!-- ADD the value thing to this -->
+		      </select>
+          <input id="timeIn" type="time" name="usr_time">
+					<h3>Skip to a time period:</h3>
+
+					<label class="switch">
+  					<input type="checkbox">
+  					<div class="slider"></div>
+					</label>
+					<h4>Camera (enable/disable):</h4>
+				</div>
+			</div>
+
+			<div id = "room6" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Garden</h2>
+					<img src="img/youtube.png">
+					<button class="button">Go</button>
+					<select>
+		        <option>Friday</option>
+		        <option>Thursay</option>
+		        <option>Wedensday</option> <!-- ADD the value thing to this -->
+		      </select>
+          <input id="timeIn" type="time" name="usr_time">
+					<h3>Skip to a time period:</h3>
+
+					<label class="switch">
+  					<input type="checkbox">
+  					<div class="slider"></div>
+					</label>
+					<h4>Camera (enable/disable):</h4>
+				</div>
+			</div>
+			<script>
+			function show( elem )
+			{
+				$('.main2-right1').hide();
+				$('#'+elem).show();
+			}
+
+
+			$('#roomlist a').click(function(e) {
+    	e.preventDefault(); //prevent the link from being followed
+    	$('#roomlist a').removeClass('active');
+    	$(this).addClass('active');
+});
+
+			</script>
+
+<!--		<div id="navigation-content">
+			<ul>
+				<li><a class="active" href="index.html">HOME</a></li>
+				<li><a href="temp.html">TEMP</a></li>
+				<li><a href="security.html">SECURITY</a></li>
+				<li><a href="video.html">VIDEO</a></li>
+				<li><a href="profiles.html">PROFILES</a></li>
+				<li><a href="settings.html">SETTINGS</a></li>
+
+			</ul>
+
+		</div>-->
+	</body>
+
+</html>

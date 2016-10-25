@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type"=text/css" href="stylesheet/stylesheet.css">
+		<title>XYZ - Security</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/logowhite.png" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="photo" id = "sbg">
+
+		</div>
+
+		<div class="navigation">
+			<a href="index.html" title="Home"><img src="img\logowhite2.png"></a>
+			<div class="navigation-content">
+				<a href="#"title="Temperature">Temperature</a>
+				<a href="security.html" class="active" title="Security">Security</a>
+				<a href="video.html" title="Surveillance">Surveillance</a>
+				<a href="#" title="Lighting">Lighting</a>
+				<a href="#" title="Profiles">Profiles</a>
+				<a href="#" title="Settings">Settings</a>
+			</div>
+		</div>
+
+		<div class="main2">
+			<div class="main2-header">
+				<br><h1>Security</h1>
+			</div>
+
+      <div class="main2-left" id="main2-alarm">
+        <h3>Alarms:</h3>
+				<ul id = "alarmlist">
+					<hr>
+					<li>House Alarm
+            <label class="switch" id="lockswitch">
+    					<input type="checkbox" checked>
+    					<div class="slider" id="lockslider"></div>
+  					</label>
+          </li><br>
+					<li>Garage Alarm
+            <label class="switch" id="lockswitch">
+    					<input type="checkbox">
+    					<div class="slider" id="lockslider"></div>
+  					</label>
+          </li><br>
+					<li><a href="#">+ Add New</a></li>
+				</ul>
+			</div>
+
+      <div id = "main2-alarmL" class="main2-right2">
+      </div>
+
+			<div class="main2-left">
+        <h3>Locks:</h3>
+				<ul id = "roomlist">
+					<hr>
+					<li><a href="#" class="active" onclick="show('lock1')">Front Door</a>
+            <label class="switch" id="lockswitch">
+    					<input type="checkbox" checked>
+    					<div class="slider" id="lockslider"></div>
+  					</label>
+          </li><hr>
+					<li><a href="#" onclick="show('lock2')">Back Door</a>
+            <label class="switch" id="lockswitch">
+    					<input type="checkbox" checked>
+    					<div class="slider" id="lockslider"></div>
+  					</label>
+          </li><hr>
+					<li><a href="#" onclick="show('lock3')">Gate</a>
+            <label class="switch" id="lockswitch">
+    					<input type="checkbox" checked>
+    					<div class="slider" id="lockslider"></div>
+  					</label>
+          </li><hr>
+					<li><a href="#" onclick="show()">+ Add New</a></li>
+				</ul>
+			</div>
+
+
+			<div id = "lock1" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Front Door</h2> <br>
+          <p>Set a code for the front door:</p>
+          <form>
+            <input name="pin" id="pin" type="number" min="0000" max="9999"/>
+            <input type="submit" class="sbutn">
+          </form>
+				</div>
+			</div>
+			<div id = "lock2" class="main2-right1">
+				<div class = "main-surround">
+					<h2>Back Door</h2><br>
+          <p>Set a code for the back door:</p>
+          <form>
+            <input name="pin" id="pin" type="number" min="0000" max="9999"/>
+            <input type="submit" class="sbutn">
+          </form>
+				</div>
+			</div>
+      <div id = "lock3" class="main2-right1">
+        <div class = "main-surround">
+          <h2>Gate</h2><br>
+          <p>Set a code for the gate:</p>
+          <form>
+            <input name="pin" id="pin" type="number" min="0000" max="9999"/>
+            <input type="submit" class="sbutn">
+          </form>
+        </div>
+      </div>
+
+
+			<script>
+			function show( elem ) {
+				$('.main2-right1').hide();
+				$('#'+elem).show();
+			}
+
+			$('#roomlist a').click(function(e) {
+    	e.preventDefault(); //prevent the link from being followed
+    	$('#roomlist a').removeClass('active');
+    	$(this).addClass('active');
+      });
+
+			</script>
+	</body>
+
+</html>
